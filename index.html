@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIC-TAC-TOE ARCADE</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="arcade-cabinet">
+
+    <div class="marquee">
+        <div class="marquee-lights">
+            <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+            <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+            <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+            <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+        </div>
+        <div class="game-title">
+            <span class="title-x">TIC</span>
+            <span class="title-dash"> - </span>
+            <span class="title-o">TAC</span>
+            <span class="title-dash"> - </span>
+            <span class="title-x">TOE</span>
+        </div>
+        <div class="insert-coin">▶ INSERT COIN TO PLAY ◀</div>
+    </div>
+
+    <div class="score-bar">
+        <span class="score-p1">P1 (X): <span id="score-x">0</span></span>
+        <span class="score-draws">DRAWS: <span id="score-d">0</span></span>
+        <span class="score-p2">P2 (O): <span id="score-o">0</span></span>
+    </div>
+
+    <div class="screen-bezel">
+        <div class="screen">
+            <div class="win-overlay" id="win-overlay"></div>
+            
+            <div class="game-board" id="game-board">
+                <div class="input-box" id="0"></div>
+                <div class="input-box" id="1"></div>
+                <div class="input-box" id="2"></div>
+                <div class="input-box" id="3"></div>
+                <div class="input-box" id="4"></div>
+                <div class="input-box" id="5"></div>
+                <div class="input-box" id="6"></div>
+                <div class="input-box" id="7"></div>
+                <div class="input-box" id="8"></div>
+            </div>
+
+            <div class="status-display">
+                <div class="status idle" id="status">PRESS START</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="control-panel">
+        <div class="joystick-deco">
+            <div class="joystick-ball"></div>
+            <div class="joystick-base"></div>
+        </div>
+
+        <div class="btn-wrap">
+            <div class="btn-label">1P START</div>
+            <button id="start-btn">START</button>
+        </div>
+
+        <div class="panel-buttons">
+            <div class="panel-btn-row">
+                <div class="mini-btn mb-blue"></div>
+                <div class="mini-btn mb-yellow"></div>
+            </div>
+            <div class="panel-btn-row">
+                <div class="mini-btn mb-green"></div>
+                <div class="mini-btn mb-red"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cabinet-footer">
+        <div class="coin-slot"></div>
+        <div class="coin-slot"></div>
+    </div>
+
+</div>
+
+<script src="./script.js">
+
+</script>
+</body>
+</html>
